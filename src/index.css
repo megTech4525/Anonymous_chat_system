@@ -114,9 +114,9 @@ border-top: none;
 }
 
 .msgg {
-  max-height: 100vh;
+  max-height: 80vh;
   overflow-y:scroll;
-  width: 100%;
+  
   margin-bottom: 10px;
   font-size: 18px;
 }
