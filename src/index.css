@@ -199,5 +199,18 @@ border-top: none;
   bottom: 70px;
   width: 250px; */
 }
+.sent {
+  background-color: rgb(5, 249, 5); /* light green */
+  color: black;
+  align-self: flex-end;
+  margin-left: auto;
+  
+}
+
+.received {
+  background-color: green; /* light grey */
+  position: relative;
+  left: 150px;
+}
   
 }
