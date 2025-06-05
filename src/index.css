@@ -114,18 +114,19 @@ border-top: none;
 }
 
 .msgg {
-  max-height: 80vh;
-  overflow-y:scroll; 
+  max-height: 78vh;
+  overflow-y:scroll;
+  
   margin-bottom: 10px;
   font-size: 18px;
 }
-/* 
+
 .messages{
-  
-} */
+  width: 40%;
+}
 
 .chat-bubble {
-  width: 30%;
+  word-wrap: break-word;
   color: white;
   padding: 10px 15px;
   margin: 5px 0;
@@ -134,108 +135,161 @@ border-top: none;
   
   
 }
+/* 
+.chat-bubble {
+  padding: 10px 15px;
+  margin: 5px 10px;
+  border-radius: 20px;
+  max-width: 70%;
+  word-wrap: break-word;
+  font-size: 16px;
+} */
 
 .sent {
   background-color: rgb(5, 249, 5); /* light green */
   color: black;
   align-self: flex-end;
   margin-left: auto;
-  position: relative;
-  right: 150px;
+  
 }
 
 .received {
   background-color: green; /* light grey */
   position: relative;
-  left: 150px;
+  left: 180px;
+  word-wrap: break-word;
+  
 }
 
-@media (max-width: 394px) {
-  .body {
-    width: 350px;
+
+@media screen and (max-width: 432px) {
+  .body{
+    height: 97vh;
+    position: fixed;
+    top: 50px;
+    right: 17px;
+    width: 87vw;
   }
-
-.chatinput input {
-  width: 170px;
-  /* position: fixed;
-  bottom: 70px;
-  width: 250px; */
+  
+.chat-bubble {
+  
+  color: white;
+  padding: 10px 15px;
+  border-radius: 15px;
+  text-align: left;
+  word-wrap: break-word;
+  width: 120px;
+  font-size: 15px;
+  
 }
 
-.sent{
-  background-color: rgb(5, 249, 5); /* light green */
-  color: black;
-  align-self: flex-end;
-  margin-left: auto;
-  position: relative;
-  right: 150px;
-}
+.chatinput input{
+  width: 260px;
+  padding: 20px;
 
-.received {
-  background-color: green; /* light grey */
-  position: relative;
-  left: 150px;
+}
+.icon{
+ font-size: 30px;
+ position: relative; 
+ top: 10px;
 }
 }
 
 
-@media (max-width: 360px) {
-  .body {
-    width: 350px;
+
+@media screen and (max-width: 394px) {
+  .body{
+    height: 97vh;
+    position: fixed;
+    top: 50px;
+    right: 12px;
+    width: 87vw;
   }
-
-.chatinput input {
+  
+.chat-bubble {
+  
+  color: white;
+  padding: 10px 15px;
+  border-radius: 15px;
+  text-align: left;
+  word-wrap: break-word;
   width: 130px;
-
-}
-.sent {
-  background-color: rgb(5, 249, 5); /* light green */
-  color: black;
-  align-self: flex-end;
-  margin-left: auto;
-  position: relative;
-  right: 150px;
+  font-size: 15px;
   
 }
+
+.chatinput input{
+  width: 240px;
+  padding: 14px;
+  position: relative;
+  top: 40px;
+  font-size: 17px;
+
+}
+.icon{
+ font-size: 25px;
+ position: relative; 
+ top: 49px;
+}
+
 
 .received {
   background-color: green; /* light grey */
   position: relative;
-  left: 150px;
+  left: 180px;
+  word-wrap: break-word;
+  width: 100px;
+  
+}
+h3{
+  font-size: 26px;
+}
 }
 
+@media screen and (max-width: 360px){
+.received {
+  background-color: green; /* light grey */
+  position: relative;
+  left: 150px;
+  word-wrap: break-word;
+  width: 100px;
   
 }
 
-@media (max-width: 432px) {
-  .body {
-    width: 100%;
-    height: 100vh;
+/* .chat-bubble {
+  background-color: red;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 15px;
+  text-align: left;
+  word-wrap: break-word;
+  width: 100px;
+  font-size: 15px;
+  
+} */
+
+.msgg{
+  height: 75vh;
+}
+
+}
+
+
+@media screen and (max-width: 412px) {
+  .chatinput input{
     position: relative;
-    margin-right: auto;
-    margin-left: auto;
+    top: 35px;
   }
-
-.chatinput input {
-  width: 230px;
-  /* position: fixed;
-  bottom: 70px;
-  width: 250px; */
-}
-.sent {
-  background-color: rgb(5, 249, 5); /* light green */
-  color: black;
-  align-self: flex-end;
-  margin-left: auto;
-  position: relative;
-  right: 150px;
-  
-}
-
-.received {
-  background-color: green; /* light grey */
-  position: relative;
-  left: 150px;
-}
-  
+  .icon{
+    position: relative;
+    top: 35px;
+  }
+  h3{
+    font-size: 27px;
+  }
+  .body{
+    position: fixed;
+    left: 10px;
+    right: 10px;
+  }
 }

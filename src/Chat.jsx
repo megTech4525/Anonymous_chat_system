@@ -125,7 +125,7 @@ function App() {
               placeholder='Chat here...'
             />
             <span onClick={handleSend}>
-              <FontAwesomeIcon icon={faPaperPlane} />
+              <FontAwesomeIcon className='icon' icon={faPaperPlane} />
             </span>
           </div>
         </div>
