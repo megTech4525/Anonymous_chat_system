@@ -166,7 +166,7 @@ border-top: none;
   .body{
     height: 97vh;
     position: fixed;
-    top: 50px;
+    top: 0px;
     right: 17px;
     width: 87vw;
   }
@@ -186,7 +186,8 @@ border-top: none;
 .chatinput input{
   width: 260px;
   padding: 20px;
-
+  background-color: transparent;
+  border-color: lightgreen;
 }
 .icon{
  font-size: 30px;
@@ -201,7 +202,7 @@ border-top: none;
   .body{
     height: 97vh;
     position: fixed;
-    top: 50px;
+    top: 0px;
     right: 12px;
     width: 87vw;
   }
